@@ -3,7 +3,7 @@
 import pandas as pd
 import requests
 import json
-df = pd.read_csv("Orderdata/SehirlerBolgeler.csv")
+df = pd.read_csv("Datasets/SehirlerBolgeler.csv")
 #df[df.columns[0:2]]  #df[['id', 'sehirad']].head() #df.loc[0,:] #columns #isnull() #dtypes #shape #display(df)
 pd.set_option('display.max_rows', None) # df.shape[0]+1)
 df.set_index("id", inplace=True)
