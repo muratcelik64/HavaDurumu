@@ -15,7 +15,8 @@ except ValueError as hata:
     print("Lütfen, sayısal bir değer giriniz... ",hata)
 
 #df.loc[plakakod:plakakod, ['sehirad']]
-API_key = "513e7fc8e6e7c4ef0ed37bdb1b816734"
+API_key = "" #https://opensource.com/
+             #adresinden alacağınız API KEY yazınız.
 watermap_url = "https://api.openweathermap.org/data/2.5/weather?q=" + sehirad + ",tr&APPID=" + API_key
 #print(plakakod," -> ", weathermap_url)
 response = requests.get(watermap_url)
